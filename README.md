@@ -8,6 +8,8 @@
 
 ### Work with the stack
 
+See [theme docs](https://imfing.github.io/hextra/docs/) on how to organize your content, too.
+
 ```bash
 cd website
 hugo mod tidy
