@@ -1,5 +1,15 @@
 ## Website bartl.team
 
+### ToDo
+
+- Get organization avatar
+- Upload to github
+- Derive favicon from it
+
+### Inititalize website
+
+"Install" hugo
+
 ```bash
 function hugo() {
   docker run \
@@ -18,12 +28,17 @@ hugo new site website
 cd website
 git init
 git submodule add https://github.com/imfing/hextra themes/hextra
-echo "theme = 'hextra'" >> hugo.toml
-hugo server
-```
+git commit -m
 
-```bash
-cd ${HUGO_ROOT}
+cat << 'EOF' > hugo.yaml
+# Hugo configuration file
+title: bartl.team
+
+theme: hextra
+EOF
+
 hugo mod tidy
 hugo server --logLevel debug --disableFastRender -p 1313
+
+git commit -m "Initialize website using theme hextra"
 ```
