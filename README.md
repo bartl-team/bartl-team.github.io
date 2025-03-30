@@ -6,6 +6,38 @@
 - Upload to github
 - Derive favicon from it
 
+### Work with the stack
+
+```bash
+cd website
+hugo mod tidy
+hugo server
+
+# Do your thing and git commit
+git push # to publish your changes
+```
+
+If working with branches, do this to merge your changes back to `main`:
+
+```bash
+echo ${my_branch}
+git checkout main
+git merge "${my_branch}" --no-ff --no-edit
+
+# Delete branch locally as well as remotely
+git push
+git push origin -d "${my_branch}"
+git branch -d "${my_branch}"
+```
+
+### Publish new content
+
+```bash
+git checkout main
+git tag "build-$(date +'%Y%m%d-%H%M%S')"
+git push --tags
+```
+
 ### Inititalize website
 
 "Install" hugo
