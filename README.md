@@ -11,7 +11,7 @@
 See [theme docs](https://imfing.github.io/hextra/docs/) on how to organize your content, too.
 
 ```bash
-cd ./website
+cd ./bartl-team.github.io
 hugo mod tidy
 hugo server
 
@@ -58,11 +58,11 @@ function hugo() {
 ```
 
 ```bash
-hugo new site website
-cd website
+hugo new site bartl-team.github.io
+cd bartl-team.github.io
+
 git init
 git submodule add https://github.com/imfing/hextra themes/hextra
-git commit -m
 
 cat << 'EOF' > hugo.yaml
 # Hugo configuration file
