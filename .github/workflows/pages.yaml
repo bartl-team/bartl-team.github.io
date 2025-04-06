@@ -30,7 +30,7 @@ defaults:
 jobs:
   # Build job
   build:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.145.0
