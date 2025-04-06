@@ -11,7 +11,7 @@
 See [theme docs](https://imfing.github.io/hextra/docs/) on how to organize your content, too.
 
 ```bash
-cd website
+cd ./website
 hugo mod tidy
 hugo server
 
