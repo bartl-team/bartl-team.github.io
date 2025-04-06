@@ -30,6 +30,7 @@ defaults:
 jobs:
   # Build job
   build:
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.145.0
