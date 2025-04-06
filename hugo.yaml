@@ -30,7 +30,7 @@ menu:
     #     type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/bartl-team/website"
+      url: "https://github.com/bartl-team/bartl-team.github.io"
       params:
         icon: github
 
@@ -45,4 +45,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/bartl-team/website/edit/main/content"
+    base: "https://github.com/bartl-team/bartl-team.github.io/edit/main/content"
