@@ -34,6 +34,10 @@ git branch -d "${my_branch}"
 
 ### Publish new content
 
+By default, deployments to GitHub Pages using tags are blocked due to [environment protection rules](https://github.com/orgs/community/discussions/39054).
+
+To enable this, we need to define a **tag name rule** that matches the pattern used in [our workflow](.github/workflows/pages.yaml). This can be configured under **Settings → Environments → `github-pages`** in the repository.
+
 ```bash
 git checkout main
 git tag "build-$(date +'%Y%m%d-%H%M%S')"
