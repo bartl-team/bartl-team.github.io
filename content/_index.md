@@ -1,5 +1,5 @@
 ---
-title: It works!
+title: Gruß geht raus an Paul!
 toc: false
 ---
 
